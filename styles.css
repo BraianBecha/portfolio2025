@@ -1,0 +1,279 @@
+:root {
+
+    --color-1: #0118D8;
+    --color-2: #1B56FD;
+    --color-3: #E9DFC3;
+    --color-4: #FFF8F8;
+    --color-dark: #37383d;
+    --color-dark-2: #5c5c5c;
+    --color-dark-3:  #b9b9b9;
+
+    --padding-left:30vw;
+    --padding-right: 20vw;
+
+}
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    
+    height: 100%;
+    min-height: 100%;
+    background-color: var(--color-4);
+}
+a{
+  text-decoration: none;
+  text-decoration-color: #01d8cd;
+}
+
+
+#elipse1{
+    height: 100% ;
+    position: absolute;
+    z-index: -1;
+    fill: var(--color-2);
+}
+#content{
+position: absolute;
+color: var(--color-dark);
+width: 100%;
+height: 100%;
+padding-left: var(--padding-left);
+padding-right: var(--padding-right);
+  
+}
+section{
+    padding-top: 5em;
+    padding-bottom: 5em;
+    max-width: 1200px;
+    
+}
+header{
+    width: 100%;
+    height: 4em;
+    background: linear-gradient(to top, var(--color-2), var(--color-1 ));
+    background: linear-gradient(to left, var(--color-2), var(--color-1 ),var(--color-2));
+    color: var(--color-4);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+header ol{
+    justify-content: space-between;
+    list-style: none;
+    max-width: 50vw;
+    
+}
+
+header ol li{
+
+    display:inline;
+    max-width: 5rem;
+    padding-left: 2rem;
+    font-size: 2rem;
+
+}
+
+.newspaper {
+    column-count: 2;
+    column-gap: 5em;
+    column-rule-style: solid;
+     column-rule-width: 3px;
+     color: var(--color-dark);
+     column-rule-color: var(--color-dark-2);
+    
+    }
+.svg1{
+    height: 150%;
+    width: 20vw;
+    position: absolute;
+}
+
+.svg2{
+    position: absolute;
+    height: 150%;
+    width: 20vw;    
+   
+
+}
+#elipse2{
+      fill: #ffffff00;  
+}
+#elipse2:hover{
+ border: 3px, solid, var(--color-3) ;
+  
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    perspective: 1000px;        
+}
+
+
+
+.card{
+    width: 30rem;
+    height: 37rem;   
+    margin: 2rem;
+    position: relative;
+    transition: transform 0.3s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    border: solid, 2px, var(--color-dark-3);
+    border-radius: 1rem;    
+}
+
+ .card-front, 
+ .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;    
+    font-size: 1.2rem;
+    background-color: var(--color-4);
+    border-radius: 2rem;
+    list-style: none;
+}
+.card-back>a{
+  text-decoration: none;
+  text-decoration-color: #01d8cd;
+}
+.card-title{
+    font-size: 2rem;
+    padding: 0.5rem;
+    display: flex ;
+    justify-content: center;
+    border-bottom: 1px solid var(--color-dark-3);
+}
+.card-tools{
+
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    
+
+}
+.card-tools > div{
+background-color: #3d3c37;
+    color: beige;
+    font-size: 1.5rem ;
+    margin: 1rem;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+}
+    
+.card-back {
+    transform: rotateY(180deg);
+    background-color: var(--color-dark) ;
+    color:var(--color-3);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+
+
+.card-back:hover {
+    filter: brightness(1.1); 
+}
+.card-front:hover{
+    filter: brightness(1.1);
+}
+
+
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+.card img{
+    width: 100%;
+    height: 60%;
+    object-fit: contain;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+   
+   }
+
+   .img-perfil{
+    height: 13rem;
+    width: 13rem;
+    border-radius: 9.1rem;
+    z-index: 4;
+    position: relative;
+
+}
+
+
+ 
+
+
+.contenedor-eliptico {
+    position: relative;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        left: -20vw;
+}
+
+
+.elipse-grande {
+    width: 30vw;
+    height: 80vh;
+    background-color: #4caf50;
+    clip-path: ellipse(50% 50% at 50% 50%);
+    position: absolute;
+    z-index: 1;
+}
+
+
+.elipse-pequena {
+   width: 40vw;
+    height: 100vh;
+    background-color: #ff990000;
+    clip-path: ellipse(50% 50% at 50% 50%);
+    position: absolute;
+    z-index: 2;
+    display: flex
+;
+    align-items: center;
+    flex-direction: column;
+    top: 9vw;
+    left: 8vw;  
+    
+}
+
+
+.texto-eliptico {
+    margin-top: 3rem;
+    max-width: 90%;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    list-style: none;
+    line-height: 1.4;
+    z-index: 3;
+    margin-left: 3rem;
+}
+
+.email{
+    background-color: #3d3c37;
+    font-size: 1.5rem;
+}
+
+.saludo {
+    font-size: 4rem;
+    margin: 3rem;
+    margin-top: 18rem;
+}
