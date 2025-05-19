@@ -121,9 +121,9 @@ header ol li{
 
 
 .card{
-    width: 30rem;
+    width: 20vw;
     height: 37rem;   
-    margin: 2rem;
+    margin: 1rem;
     position: relative;
     transition: transform 0.3s;
     transform-style: preserve-3d;
@@ -213,10 +213,6 @@ background-color: #3d3c37;
 
 }
 
-
- 
-
-
 .contenedor-eliptico {
     position: relative;
     width: 50vw;
@@ -273,7 +269,7 @@ background-color: #3d3c37;
 }
 
 .saludo {
-    font-size: 4rem;
-    margin: 3rem;
-    margin-top: 18rem;
+    font-size: 3rem;
+    margin: 2.5rem;
+    margin-top: 15rem;
 }
