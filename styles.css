@@ -7,10 +7,15 @@
     --color-dark: #37383d;
     --color-dark-2: #5c5c5c;
     --color-dark-3:  #b9b9b9;
+    --color-purpura: #b408b4;
 
-    --padding-left:30vw;
-    --padding-right: 20vw;
+    --padding-left: 25vw;
+    --padding-right: 2vw;
 
+      
+
+    --card-width: 19rem;
+    --card-height: 22rem;
 }
 * { 
     margin: 0;
@@ -21,7 +26,7 @@ html{
     height: 100%;
 }
 body{
-    
+    font-family: Raleway;
     height: 100%;
     min-height: 100%;
     background-color: var(--color-4);
@@ -32,13 +37,10 @@ a{
 }
 
 
-#elipse1{
-    height: 100% ;
-    position: absolute;
-    z-index: -1;
-    fill: var(--color-2);
-}
 #content{
+    
+    z-index: 1;
+    align-items: center;
 position: absolute;
 color: var(--color-dark);
 width: 100%;
@@ -50,7 +52,7 @@ padding-right: var(--padding-right);
 section{
     padding-top: 5em;
     padding-bottom: 5em;
-    max-width: 1200px;
+    max-width: 95vw;
     
 }
 header{
@@ -90,39 +92,24 @@ header ol li{
      column-rule-color: var(--color-dark-2);
     
     }
-.svg1{
-    height: 150%;
-    width: 20vw;
-    position: absolute;
-}
 
-.svg2{
-    position: absolute;
-    height: 150%;
-    width: 20vw;    
-   
 
-}
-#elipse2{
-      fill: #ffffff00;  
-}
-#elipse2:hover{
- border: 3px, solid, var(--color-3) ;
-  
-}
 
 .projects {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;  
     perspective: 1000px;        
 }
 
 
 
+
 .card{
-    width: 20vw;
-    height: 37rem;   
+   display: grid;
+    grid-template-columns: auto;
+    width: var(--card-width);
+    height: var(--card-height);   
     margin: 1rem;
     position: relative;
     transition: transform 0.3s;
@@ -131,6 +118,38 @@ header ol li{
     border: solid, 2px, var(--color-dark-3);
     border-radius: 1rem;    
 }
+
+
+.card-front{
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+}
+.card-front .card-img{
+    overflow: hidden;
+display: grid;
+    grid-row-start: 1;
+    grid-row-end: 9;
+
+}
+.card-front .card-title{
+
+    grid-row-start: 9;
+    grid-row-end: 10;
+
+}
+.card-front .card-tools{
+
+    grid-row-start: 10;
+    grid-row-end: 13;
+
+     display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+
 
  .card-front, 
  .card-back {
@@ -144,12 +163,17 @@ header ol li{
     list-style: none;
 }
 .card-back>a{
-  text-decoration: none;
-  text-decoration-color: #01d8cd;
+  color: #01d8cd !important;
+}
+.card-back > a:hover{
+    background-color: var(--color-purpura);
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
 }
 .card-title{
-    font-size: 2rem;
-    padding: 0.5rem;
+    font-size: 1rem;
+    padding: 0.3rem;
     display: flex ;
     justify-content: center;
     border-bottom: 1px solid var(--color-dark-3);
@@ -164,13 +188,14 @@ header ol li{
     
 
 }
+
+
 .card-tools > div{
 background-color: #3d3c37;
     color: beige;
     font-size: 1rem ;
-    flex-wrap: wrap;
-    margin: 1rem;
-    padding: 0.8rem;
+    margin: 0.2rem;
+    padding: 0.5rem;
     border-radius: 0.5rem;
 }
     
@@ -196,14 +221,23 @@ background-color: #3d3c37;
     transform: rotateY(180deg);
 }
 
-.card img{
+.card img {
     width: 100%;
-    height: 60%;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
-   
-   }
+}
+.icon{
+    color: var(--color-dark);
+    font-size: 3rem;
+    padding: 0.5rem;
+    border-radius: 1.3rem;
+}
+.icon:hover{
+      filter: brightness(1.1); 
+      background-color: var(--color-purpura);
+}
 
    .img-perfil{
     height: 13rem;
@@ -214,14 +248,31 @@ background-color: #3d3c37;
 
 }
 
+#elipse1{
+    height: 100% ;
+    position: absolute;
+    z-index: -1;
+    fill: var(--color-2);
+    rx: 20vw;
+    ry: 70vh;
+    cx: 0;
+    cy: 50vh;    
+}
+.svg1{
+    height: 150%;
+    width: 40vw;
+    position: absolute;
+}
 .contenedor-eliptico {
-    position: relative;
+    position: relative;    
+    max-width: 53rem;
     width: 50vw;
     height: 100vh;
+    left: -20vw;
     display: flex;
     align-items: center;
-    justify-content: center;
-        left: -20vw;
+    justify-content: center;    
+    flex-direction: column;        
 }
 
 
@@ -234,34 +285,31 @@ background-color: #3d3c37;
     z-index: 1;
 }
 
-
 .elipse-pequena {
-   width: 40vw;
+    width: 20vw;
     height: 100vh;
     background-color: #ff990000;
-    clip-path: ellipse(50% 50% at 50% 50%);
+    clip-path: ellipse(63% 61% at 54% 41%);
     position: absolute;
     z-index: 2;
-    display: flex
-;
+    display: flex;
     align-items: center;
     flex-direction: column;
-    top: 9vw;
-    left: 8vw;  
-    
+    top: 10vw;
+    left: 19vw;
 }
 
 
 .texto-eliptico {
     margin-top: 3rem;
-    max-width: 90%;
+    margin-left: 3rem;
+    max-width: 100%;    
+    font-size: 1rem;
     text-align: center;
     color: white;
-    font-size: 2rem;
     list-style: none;
     line-height: 1.4;
     z-index: 3;
-    margin-left: 3rem;
 }
 
 .email{
@@ -274,3 +322,184 @@ background-color: #3d3c37;
     margin: 2.5rem;
     margin-top: 15rem;
 }
+/* basado en tailwind */
+@media (max-width:40rem) /* 640px */ {
+
+    .svg1 {
+        height: 150vh;
+        width: 60vw;
+        position: absolute;
+        }
+
+       #elipse1 {
+        rx: 8rem;
+        ry: 38rem;
+    }
+    .contenedor-eliptico{
+        display: none;
+    }
+}
+
+
+@media (min-width:40rem) and (max-width:48rem) /*640px*/ {
+  
+
+     .svg1 {
+        height: 150vh;
+        width: 50vw;
+        position: absolute;
+        }
+
+     #elipse1 {
+        rx: 14rem;
+        ry: 38rem;
+    }
+
+    .contenedor-eliptico{
+        display: none;
+    }
+}
+@media (min-width:48rem)  and (max-width:64rem) /*768px*/ {
+   
+
+        #elipse1 {
+        rx: 18rem;
+        ry: 41rem
+       
+    }
+    .contenedor-eliptico{ 
+        width: 31rem;
+        left: -8rem;
+        top: -7rem;       
+    }
+
+    .texto-eliptico {
+        margin-top: 3rem;
+        margin-left: 3rem;
+        font-size: 1.6rem;
+}
+.email{
+        font-size: 1rem;
+}
+.saludo{        
+    font-size: 3.5rem;
+    margin-left: 8rem;    
+    margin-top: 15rem;
+    }
+
+}
+@media (min-width:64rem)  and (max-width:80rem) /*1024*/{
+   
+     .card{
+        width: 23rem;
+        height: 23rem;
+    }
+    
+    .contenedor-eliptico{ 
+        width: 31rem;
+        left: -6rem;
+        top: -7rem;       
+    }
+
+    .texto-eliptico {
+        margin-top: 3rem;
+        margin-left: 3rem;
+        font-size: 2.3rem;
+}
+.email{
+        font-size: 1rem;
+}
+    #elipse1 {
+        rx: 24rem;
+        ry: 45rem;
+        cx: 0;
+        cy: 50vh;
+    }
+    .saludo{        
+    font-size: 3.5rem;
+    margin-left: 8rem;    
+    margin-top: 15rem;
+    }
+}
+@media  /*1280px*/ (min-width:80rem)  and (max-width:96rem){
+  
+ .card{
+        width: 23rem;
+        height: 23rem;
+    }
+     .card-back{
+        font-size: 1.4rem;
+    }
+    
+    .contenedor-eliptico{ 
+        left: -12rem;
+        top: -7rem;
+    }
+
+    .texto-eliptico {
+    margin-top: 3rem;
+    margin-left: 3rem;  
+    font-size: 2.3rem;
+}
+
+    #elipse1{
+        rx: 24rem;
+        ry: 45rem;
+        cx: 0;
+        cy: 50vh;
+    }
+    .saludo{
+        
+    font-size: 4rem;
+    margin-left: 8rem;
+    
+    margin-top: 15rem;
+    }
+     .card-title{
+        font-size: 1.4rem;
+    }
+    
+    .card-tools > div{
+         font-size: 1.3rem;
+
+    }
+
+}
+@media (min-width:96rem) /*1536px*/{
+
+    .card{
+        width: 30rem;
+        height: 30rem;
+    }
+ .saludo{
+    font-size: 5rem;
+ }
+   
+    .contenedor-eliptico{        
+    left: -16rem;
+    top: -7rem;
+    }
+    .texto-eliptico{
+        font-size: 2.3rem;
+    }
+    #elipse1{
+        rx: 24rem;
+        ry: 45rem;
+        cx: 0;
+        cy: 50vh;
+    }
+    .card-back{
+        font-size: 1.7rem;
+    }
+    .card-title{
+        font-size: 1.5rem;
+    }
+    
+    .card-tools > div{
+         font-size: 1.6rem;
+
+    }
+   
+}
+
+
