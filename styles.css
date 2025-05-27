@@ -345,6 +345,54 @@ background-color: #3d3c37;
     margin: 2.5rem;
     margin-top: 15rem;
 }
+
+.listfinal{
+    margin: 2rem;
+    margin-top: 3rem;
+}
+
+.form1{
+
+    margin: 2rem;
+    padding: 2rem;
+    border: solid 1px var(--color-dark-2);
+    border-radius: 1rem;
+    min-width: 18rem;
+    max-width: 39rem;
+    font-size: 1.5rem;
+
+}
+.form1 .button{
+    
+    font-size: 1.5rem;
+    background-color: var(--color-2);
+    border-radius: 0.5rem;
+    color: white;
+    padding: 0.9rem;
+    margin: 1rem;
+}
+.form1 .button:hover{
+    /*
+   filter: brightness(1.5); */
+   background-color: var(--color-purpura);
+}
+.inp-mombre{
+
+    height: 2rem !important;
+    padding: 3rem !important;
+    border-radius: 1rem;
+    
+} 
+.form1 .inp-email{}
+.form1 .inm-mensaje{}
+
+
+
+
+
+
+
+
 /* basado en tailwind */
 @media (max-width:40rem) /* 640px */ {
 
