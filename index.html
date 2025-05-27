@@ -12,19 +12,29 @@
 <body> 
     <header>
         <nav>
-           
-
+            <div id="menu-p">
+           <i class="fa-solid fa-ellipsis-vertical" onclick="dropDown()"></i>
+           </div>
+           <div id="dropdown-m">
+            <ol>
+                <li onclick="mostrarPrincipal()">Principal</li>
+                <li onclick="mostrarAbout()">Sobre mí</li>
+            </ol>
+           </div>
         </nav>
     </header>   
     <div id="content">
+
+        <div id="saludo1">
         <div class="saludo">
         <h1> Hola!
         </h1>
         <h2> Programo cosas.</h2>
         <h4>Algunos de mis proyectos:</h4>
         </div>
+        </div>
 
-      <section>
+      <section id="section1">
         <div class="projects">
 
                         <div class="card" >
@@ -152,10 +162,29 @@
 
         </section>
 
+        <section id="section2">
+            <div class="newspaper">
+        <h1>  Sobre mí  </h1>
+  <p> Vivo en Moreno, Buenos Aires. Empecé a aprender Desarrollo Web en el año 2022 mediante diversos cursos y basándome en los sólidos principios de programación que aprendí en la Universidad, cursando Ingeniería en Electrónica.
+    Llevo varios años de aprendizaje constante y estoy listo para trabajar en el sector tecnológico. 
+     
+    <h3> Experiencia: </h3>
+    <p> Mi carrera laboral en otros rubros me sirvió para dedicarme a aprender lo que me gusta durante años y con perseverancia. En los proyectos que muestro en esta Web pueden 
+        apreciarse mis habilidades volcadas a objetivos reales. </p>
+
+        <h3>Inglés: </h3>
+<p> Mi relación con el Inglés fue similar al de la programación y actualmente soy capaz de mantener conversaciones básicas y leer sin problemas gran variedad de textos, en especial textos técnicos.</p>
+  </p>
+  
+  </div>
+        </section>
+
         
     </div> 
+
+    
    
-<div>
+
     <svg class="svg1">
 
         
@@ -165,7 +194,7 @@
         
     </svg>
 
-    
+    <div id="side-card">
 
     <div class="contenedor-eliptico">
         <img  class="img-perfil" src="img/1732216554920.jpg" alt="perfil">

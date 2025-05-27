@@ -37,6 +37,33 @@ a{
 }
 
 
+#menu-p >i{
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-right: 3rem;
+}
+#menu-p :hover{
+background-color: var(--color-purpura);
+}
+#dropdown-m{
+    position: relative;
+    background-color: var(--color-2);
+    border: solid 2px var(--color-dark);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    z-index: 2;
+}
+header ol li{
+   list-style: none;
+   font-size: 2rem;
+   padding: 0.7rem;
+   
+}
+header ol li:hover{
+    background-color: var(--color-purpura);
+}
+
 #content{
     
     z-index: 1;
@@ -49,6 +76,12 @@ padding-left: var(--padding-left);
 padding-right: var(--padding-right);
   
 }
+#section2{
+    font-size: 2rem;
+}
+#section2 h1 {
+    padding: 1rem;
+}
 section{
     padding-top: 5em;
     padding-bottom: 5em;
@@ -57,31 +90,18 @@ section{
 }
 header{
     width: 100%;
-    height: 4em;
+    height: 6em;
     background: linear-gradient(to top, var(--color-2), var(--color-1 ));
     background: linear-gradient(to left, var(--color-2), var(--color-1 ),var(--color-2));
     color: var(--color-4);
     padding: 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     
     
 }
-header ol{
-    justify-content: space-between;
-    list-style: none;
-    max-width: 50vw;
-    
-}
 
-header ol li{
 
-    display:inline;
-    max-width: 5rem;
-    padding-left: 2rem;
-    font-size: 2rem;
-
-}
 
 .newspaper {
     column-count: 2;
@@ -90,6 +110,9 @@ header ol li{
      column-rule-width: 3px;
      color: var(--color-dark);
      column-rule-color: var(--color-dark-2);
+     background-color: var(--color-4);
+     border-radius: 1rem;
+     padding: 2rem;
     
     }
 
@@ -324,6 +347,9 @@ background-color: #3d3c37;
 }
 /* basado en tailwind */
 @media (max-width:40rem) /* 640px */ {
+    .newspaper {
+    column-count: 1;
+};
 
     .svg1 {
         height: 150vh;
@@ -340,6 +366,7 @@ background-color: #3d3c37;
     }
     .saludo{
         font-size: 2rem;
+        margin-top: 6rem;
     }
     .card-tools > div{
         
@@ -349,12 +376,15 @@ background-color: #3d3c37;
     .card-back{
         font-size: 0.9rem;
     }
+
 }
 
 
 @media (min-width:40rem) and (max-width:48rem) /*640px*/ {
   
-
+  .newspaper {
+    column-count: 1;
+};
      .svg1 {
         height: 150vh;
         width: 50vw;
@@ -372,10 +402,13 @@ background-color: #3d3c37;
 }
 @media (min-width:48rem)  and (max-width:64rem) /*768px*/ {
    
+      .newspaper {
+    column-count: 1;
+}
 
         #elipse1 {
         rx: 18rem;
-        ry: 41rem
+        ry: 55rem
        
     }
     .contenedor-eliptico{ 
@@ -401,6 +434,9 @@ background-color: #3d3c37;
 }
 @media (min-width:64rem)  and (max-width:80rem) /*1024*/{
    
+      .newspaper {
+    column-count: 1;
+};
      .card{
         width: 23rem;
         height: 23rem;
