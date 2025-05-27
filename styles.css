@@ -338,6 +338,17 @@ background-color: #3d3c37;
     .contenedor-eliptico{
         display: none;
     }
+    .saludo{
+        font-size: 2rem;
+    }
+    .card-tools > div{
+        
+    font-size: 0.9rem;
+    padding: 0.2rem;
+    }
+    .card-back{
+        font-size: 0.9rem;
+    }
 }
 
 
