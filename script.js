@@ -40,7 +40,7 @@ flag=false;
 }
 
 function mostrarPrincipal(){
-    //dropDown();
+    
     console.log("llamada a principal");
     section2.style.display="none";
     section1.style.display="block";
@@ -48,7 +48,7 @@ function mostrarPrincipal(){
     sideCard.style.display="block";
 };
 function mostrarAbout(){
-    //dropDown();
+   
     console.log("llamada a about");
     section1.style.display="none";
     section2.style.display="block";
