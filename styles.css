@@ -486,6 +486,9 @@ background-color: #3d3c37;
 
 
 @media (max-width: 640px) {
+    .nombresobremi {
+        font-size: 1.8rem;
+    }
 
     .img-perfil{
     height: 5rem;
@@ -626,6 +629,11 @@ header ol li {
 
 }
 @media (min-width:641px) and (max-width:768px){
+
+      .nombresobremi {
+        font-size: 1.8rem;
+    }
+    
   .img-perfil{
     height: 8rem;
     width: 8rem;
