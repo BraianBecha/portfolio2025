@@ -274,12 +274,15 @@ background-color: #3d3c37;
 }
 .img-perfil-gato{
     height: 21rem;
-    width: 18rem;   
+    width: 21rem;   
     z-index: 4;
     position: relative;
 }
 
 .img-perfil:hover {
+ filter: brightness(1.3); 
+}
+.img-perfil-gato:hover {
  filter: brightness(1.3); 
 }
 
@@ -375,7 +378,8 @@ background-color: #3d3c37;
     float: left;
     margin-top: 1rem;
     margin-left: 1rem; 
-    font-size: 2rem;
+    padding: 2rem;
+    font-size: 2.5rem;
     text-align: left;
     color: var(--color-dark);
     list-style: none;
