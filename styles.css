@@ -27,7 +27,7 @@ html{
 }
 body{
 background: #d9d0d0;
-background: linear-gradient(90deg, rgba(217, 208, 208, 1) 0%, rgba(255, 248, 248, 1) 50%, rgba(245, 230, 220, 1) 100%);
+background: linear-gradient(90deg, rgb(204, 197, 197) 0%, rgba(255, 248, 248, 1) 50%, rgb(241, 223, 211) 100%);
     font-family: Raleway;
     height: 100%;
     min-height: 100%;
