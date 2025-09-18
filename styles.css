@@ -873,8 +873,8 @@ header ol li {
     font-size: 2.3rem;
 }
     .card{
-        width: 30rem;
-        height: 30rem;
+       width: 42rem;
+        height: 42rem; 
     }
  .saludo{
     font-size: 4.5rem;
@@ -894,7 +894,7 @@ header ol li {
         cy: 50vh;
     }
     .card-back{
-        font-size: 1.7rem;
+        font-size: 2.1rem;
     }
     .card-title{
         font-size: 1.5rem;
