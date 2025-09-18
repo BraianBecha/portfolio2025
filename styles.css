@@ -412,12 +412,12 @@ background-color: #3d3c37;
 
 .form1 .button{
     max-width: max-content; 
-    font-size: 1.5rem;
+    font-size: 1rem;
     background-color: var(--color-2);
     border-radius: 0.5rem;
     color: white;
     padding: 0.9rem;
-    margin: 1rem;
+    margin: 0.3rem;
 }
 
 .form1 .button i{
@@ -567,7 +567,7 @@ background-color: #3d3c37;
     font-size: 1.5rem;
     min-width: 0;
     margin: 0;
-    padding: 0;
+    padding: 2rem;
 }
 
     .form1 .inp-mensaje, .inp-nombre ,.inp-email{    
@@ -901,21 +901,21 @@ header ol li {
 }
 .form1 > form > div > .lab-nombre{
     margin: 1rem;
-    font-size: 2rem;
+    font-size: 0.9rem;
 }
 .form1 > form > div > .lab-email{
      margin: 1rem;
-    font-size: 2rem;
+    font-size: 0.9rem;
 }
 .form1 > form > div > .lab-mensaje{
      margin: 1rem;
-    font-size: 2rem;
+    font-size: 0.9rem;
 }
 .form1 .inp-mensaje{
-    font-size: 2rem;
+    font-size: 0.9rem;
 }
 .calltoaction{
-    font-size: 2.1rem;
+    font-size: 1rem;
     margin: 0.5rem;
 }
    
@@ -979,18 +979,18 @@ header ol li {
 }
 .form1 > form > div > .lab-nombre{
     margin: 1rem;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 .form1 > form > div > .lab-email{
      margin: 1rem;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 .form1 > form > div > .lab-mensaje{
      margin: 1rem;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 .form1 .inp-mensaje{
-    font-size: 2rem;
+    font-size: 1rem;
 }
 .calltoaction{
     font-size: 2.1rem;
