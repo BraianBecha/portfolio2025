@@ -60,7 +60,7 @@ background-color: var(--color-purpura);
 }
 header ol li{
    list-style: none;
-   font-size: 2rem;
+   font-size: 1rem;
    padding: 0.7rem;
    
 }
@@ -486,6 +486,17 @@ background-color: #3d3c37;
 
 
 @media (max-width: 640px) {
+
+    #menu-p >i {
+        font-size: 2rem;
+    }
+
+
+    .saludo {
+    padding: 2rem;
+}
+
+
     .nombresobremi {
         font-size: 1.8rem;
     }
@@ -630,10 +641,20 @@ header ol li {
 }
 @media (min-width:641px) and (max-width:768px){
 
-      .nombresobremi {
+    #menu-p >i {
+        font-size: 2rem;
+    }
+
+    
+    .saludo {
+    padding: 2rem;
+}
+
+
+.nombresobremi {
         font-size: 1.8rem;
     }
-    
+
   .img-perfil{
     height: 8rem;
     width: 8rem;
@@ -717,7 +738,7 @@ header ol li {
 }
 
 .saludo{        
-    font-size: 3.5rem;
+    font-size: 2rem;
     margin-left: 8rem;    
     margin-top: 15rem;
     }
@@ -809,7 +830,7 @@ header ol li {
     }
     .saludo{
         
-    font-size: 2rem;
+    font-size: 2.3rem;
     margin-left: 8rem;
     
     margin-top: 15rem;
@@ -842,7 +863,7 @@ header ol li {
         height: 30rem;
     }
  .saludo{
-    font-size: 5rem;
+    font-size: 3rem;
  }
    
     .contenedor-eliptico{        
