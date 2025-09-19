@@ -7,7 +7,7 @@
     --color-dark: #37383d;
     --color-dark-2: #5c5c5c;
     --color-dark-3:  #b9b9b9;
-    --color-purpura: lab(43.02% 74.88 -46.43);
+    --color-purpura: rgb(180, 8, 180);
 
     --padding-left: 25vw;
     --padding-right: 2vw;
