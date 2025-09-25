@@ -1,6 +1,7 @@
 :root {
 
     --color-1: #0118D8;
+    --color-1-1: #0416bd;
     --color-2: #1B56FD;
     --color-3: #E9DFC3;
     --color-4: #FFF8F8;
@@ -97,7 +98,7 @@ header{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    background: linear-gradient(to top, var(--color-2), var(--color-1 ));
+    background: linear-gradient(to top, var(--color-2), var(--color-1-1 ));
     /*background: linear-gradient(to left, var(--color-2), var(--color-1 ),var(--color-2));*/
     color: var(--color-4);
     padding: 1rem;
@@ -297,6 +298,7 @@ background-color: #3d3c37;
     position: absolute;
     z-index: -1;
     fill: var(--color-2);
+    /*  background-image: radial-gradient(circle at center, var(--color-2), var(--color-1-1 ));    */
     rx: 20vw;
     ry: 70vh;
     cx: 0;
@@ -306,6 +308,7 @@ background-color: #3d3c37;
     height: 150%;
     width: 40vw;
     position: absolute;
+    
 }
 .contenedor-eliptico {
     position: relative;    
