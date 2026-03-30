@@ -257,6 +257,12 @@ background-color: #3d3c37;
     transform: rotateY(180deg);
 }
 
+
+
+
+
+
+
 .card img {
     width: 100%;
     height: 100%;
@@ -844,8 +850,7 @@ header ol li {
     .saludo{
         
     font-size: 2.3rem;
-    margin-left: 8rem;
-    
+    margin-left: 8rem;    
     margin-top: 15rem;
     }
      .card-title{

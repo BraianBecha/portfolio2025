@@ -11,14 +11,9 @@ var sideCard = document.getElementById("side-card")
 section2.style.display="none";
 
 var card = document.querySelectorAll(".card");
-
-console.log(card)
 card.forEach(element => {
-    element.addEventListener("click" , function(){
-       
+    element.addEventListener("click" , function(){       
         this.classList.toggle("flipped");  
-          
-        console.log("llamada a foreach");
     });
 });
 
@@ -35,8 +30,7 @@ flag=false;
            console.log("if2");
            flag=true;
     };
-    console.log("llamada a dropDown")
-  
+    console.log("llamada a dropDown")  
 }
 
 function mostrarPrincipal(){

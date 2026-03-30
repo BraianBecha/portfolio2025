@@ -65,34 +65,135 @@ export default {
     ElipseComponent
   },data() {
     return {
+
       linkCard: "",
       linkTexto1: "",
       linkArticulo: "",
       
       arrayCardData : [
         {
-            "cardTitle": "Proyecto 1",
-            "cardDescription": "Descripción del proyecto 1",
-            "cardTools": ["Vue.js", "JavaScript", "CSS"],
+            "cardTitle": "Amazing Flash Gallery",
+            "cardDescription": 
+            
+            `Galería de imágenes por tiempo limitado. 
+         Una cuenta regresiva marca el tiempo restante.
+        Una vez finalizado, ya no se permiten descargas y aparece un mensaje de agradecimiento por participar. El diseño se adapta a distintos tamaños de pantalla.           
+         Técnicamente, es un frontend con Vue.js y Options API. La fecha de finalización se fija en una variable reactiva, de igual manera los textos.
+        Una imagen fue generada por IA. 
+         El código es mantenible y escalable, con componentes reutilizables y una organización clara.`,
+            
+         
+         "cardTools": ["Vue.js", "Options API", "Imágenes con IA", "Diseño Responsive"],
             "cardImg": "",
             "cardLink": "",
-            "backTitle": ""
+            "backTitle": "Características"
         },
         {
-            "cardTitle": "Proyecto 2",
-            "cardDescription": "Descripción del proyecto 2",
-            "cardTools": ["React", "JavaScript", "CSS"],
+            "cardTitle": "API REST con autenticación",
+            "cardDescription": `
+            
+            API REST con autenticación de usuario mediante usuario y contraseña. 
+       
+        Cada usuario tiene permisos para acceder a ciertos recursos según sea 'USER', 'ADMIN' o 'DISABLED' para usuarios borrados.
+        Los datos de cada usuario se guardan en una base de datos. La contraseña se guarda encriptada para seguridad del usuario.
+         La app está pensada para devolver archivos alojados en el mismo servidor.
+        
+            `,
+            "cardTools": ["Spring Security", "BCrypt", "Spring Boot" , "Json Web Token"],
             "cardImg": "",
             "cardLink": "",
-            "backTitle": ""
+            "backTitle": "Características"
         },
         {
-            "cardTitle": "Proyecto 3",
-            "cardDescription": "Descripción del proyecto 3",
-            "cardTools": ["Angular", "TypeScript", "SCSS"],
+            "cardTitle": "Generador de QRs",
+            "cardDescription": `
+             
+         Aplicación de escritorio para crear QR. Una ventana principal contiene el ingreso de datos
+         y una segunda muestra una lista de acciones que se ejecutarán todas al tocar un botón. Cada acción resulta en
+        uno o más QRs y uno o más archivos. 
+     
+        Código mantenible y escalable en un MVC + Builder que construye un código QR y lo imprime en PDF digital. 
+        La organización de paquetes y clases siguen la convención Maven.       
+
+            `,
+            "cardTools": ["Java Swing",  "S.O.L.I.D" , "Librería QR" , "Librería PDF"],
             "cardImg": "",
             "cardLink": "",
-            "backTitle": ""
+            "backTitle": "Características"
+        },
+        {
+            "cardTitle": "CRUD",
+            "cardDescription": `
+            
+         El CRUD típico de un curso de BackEnd. Lo hice en el curso Back-End/Java en Talento Tech. 
+       
+            `,
+            "cardTools": ["Java", "Spring Boot", "Maven" , "Bases de Datos" ],
+            "cardImg": "",
+            "cardLink": "",
+            "backTitle": "Características"
+        },
+        
+        {
+            "cardTitle": "Página Web colorida",
+            "cardDescription": `
+             
+         Landing page promocional de un servicio. Simple y rápida, tiene dos secciones y formulario de contacto; modo oscuro y descarga de documentos. Textos de redacción propia, sin IA.
+         
+         `,
+            "cardTools": ["Bootstrap", "FormSpree", "CSS", "HTML" , "CSS" , "JAVASCRIPT"],
+            "cardImg": "",
+            "cardLink": "",
+            "backTitle": "Características"
+        },
+        {
+            "cardTitle": "Servidor Web con Arduino",
+
+            "cardDescription": `Aprovecha la escasa memoria de una placa Arduino Mega 2560 para establecer un servidor Web que devuelva una página con datos de los pines. 
+         a fin de mostrar datos útiles de los pines.
+          Un script en Java me ayudó a embeber el HTML en C++.`,
+
+            "cardTools": ["Angular", "Arduino JSON", "Arduino Ethernet", "Java" , "HTML" , "CSS", "JavaScript"],
+            "cardImg": "",
+            "cardLink": "",
+            "backTitle": "Características"
+        },
+        {
+            "cardTitle": "Sitio Web de Club deportivo",
+            "cardDescription":  `Secciones varias como Institucional, Misión, Próximos Eventos,
+          mapas con ubicación. 
+          Cronograma con próximos partidos.
+          Formulario de registro para nuevos miembros.
+          Sección de contacto.
+          Documento legal simulado con las reglas del club. `,
+            "cardTools": ["React", "JavaScript", "CSS" , "Google Maps " ],
+            "cardImg": "",
+            "cardLink": "",
+            "backTitle": "Características"
+        },
+        {
+            "cardTitle": "Visualizador de imágenes de Marte (de momento no funciona, ver descripción)",
+            "cardDescription": `     Este sitio busca y muestra imágenes provistas por la NASA sobre la exploración del suelo marciano en busca de evidencias de vida antigua. 
+                          Tiene un formulario de búsqueda donde se puede elegir por día y por misión. 
+                         
+                          Actualmente no funciona la API encargada de devolver las imágenes. El propietario de la API ha decidido archivarla tras más de 10 años 
+                          de servicio, por lo que el proyecto se encuentra en stand by a la espera de una solución.
+
+                        `,
+            "cardTools": ["Vue.js", "HTML", "JavaScript", "SCSS"],
+            "cardImg": "",
+            "cardLink": "",
+            "backTitle": "Características"
+        },
+          {
+            "cardTitle": " E-Commerce",
+            "cardDescription": ` Una tienda virtual clásica con lista de productos provenientes de una API, carrito de compras, cálculo de monto total de la compra y formulario de contacto funcional.
+                 
+                        `,
+            "cardTools": ["HTML", "JavaScript", "FormSpree"],
+            "cardImg": "",
+            "cardLink": "",
+            "backTitle": "Características"
         }
     ]
     }
