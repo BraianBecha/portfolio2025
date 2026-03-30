@@ -1,4 +1,5 @@
 <template>
+    
 <svg class="svg1">      
            <ellipse id="elipse1" />       
     </svg>
@@ -30,4 +31,6 @@
 </script>
 
 <style scoped>
+
+
 </style>

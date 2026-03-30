@@ -8,14 +8,14 @@ import SaludoComponent from './components/SaludoComponent.vue'
 import ProjectsComponent from './components/ProjectsComponent.vue'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import CardComponent from './components/CardComponent.vue'
 
 const app = createApp(App)
 app.component('nav-component', NavComponent)
 app.component('elipse-component', ElipseComponent)
 app.component('saludo-component', SaludoComponent)
 app.component('projects-component', ProjectsComponent)
-
-
+app.component('card-component', CardComponent)
 app.mount('#app')
 
 

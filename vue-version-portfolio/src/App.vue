@@ -1,7 +1,4 @@
-<script setup lang="ts">
 
-
-</script>
 
 
 
@@ -36,7 +33,9 @@
   <section id="section1">
 
     <div class="projects">
-    <projects-component />
+    
+   <projects-component :arrayCardData="arrayCardData" />
+   
     </div>
 
   </section>
@@ -49,6 +48,60 @@
 <elipse-component />
 
 </template>
+
+<script >
+import NavComponent from './components/NavComponent.vue'
+import SaludoComponent from './components/SaludoComponent.vue'
+import ProjectsComponent from './components/ProjectsComponent.vue'
+import ElipseComponent from './components/ElipseComponent.vue'
+
+
+export default {
+  name: 'App',
+  components: {
+    NavComponent,
+    SaludoComponent,
+    ProjectsComponent,
+    ElipseComponent
+  },data() {
+    return {
+      linkCard: "",
+      linkTexto1: "",
+      linkArticulo: "",
+      
+      arrayCardData : [
+        {
+            "cardTitle": "Proyecto 1",
+            "cardDescription": "Descripción del proyecto 1",
+            "cardTools": ["Vue.js", "JavaScript", "CSS"],
+            "cardImg": "",
+            "cardLink": "",
+            "backTitle": ""
+        },
+        {
+            "cardTitle": "Proyecto 2",
+            "cardDescription": "Descripción del proyecto 2",
+            "cardTools": ["React", "JavaScript", "CSS"],
+            "cardImg": "",
+            "cardLink": "",
+            "backTitle": ""
+        },
+        {
+            "cardTitle": "Proyecto 3",
+            "cardDescription": "Descripción del proyecto 3",
+            "cardTools": ["Angular", "TypeScript", "SCSS"],
+            "cardImg": "",
+            "cardLink": "",
+            "backTitle": ""
+        }
+    ]
+    }
+  
+  }
+ }
+</script>
+
+
 
 <style scoped>
 
