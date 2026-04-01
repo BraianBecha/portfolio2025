@@ -19,7 +19,7 @@
 
   <header>
    
-<nav-component />
+<nav-component  @navigate="changeSection"  />
     
   </header>
 
@@ -27,17 +27,13 @@
 
 <div id="content">
 
-  <saludo-component /> 
+  <saludo-component v-if="secRender === 'projects-component'" /> 
 
 
   <section id="section1">
 
-    <div class="projects">
-    
-   <projects-component :arrayCardData="arrayCardData" />
-   
-    </div>
-
+      <component :is="secRender" :arrayCardData="arrayCardData" />
+     
   </section>
   
   <section id="section2">
@@ -47,6 +43,8 @@
 
 <elipse-component />
 
+<side-data-component v-if="secRender !== 'blog-component'" />
+
 </template>
 
 <script >
@@ -54,6 +52,9 @@ import NavComponent from './components/NavComponent.vue'
 import SaludoComponent from './components/SaludoComponent.vue'
 import ProjectsComponent from './components/ProjectsComponent.vue'
 import ElipseComponent from './components/ElipseComponent.vue'
+import AboutComponent from './components/AboutComponent.vue';
+import BlogComponent from './components/BlogComponent.vue';
+import SideDataComponent from './components/SideDataComponent.vue';
 
 
 export default {
@@ -62,14 +63,17 @@ export default {
     NavComponent,
     SaludoComponent,
     ProjectsComponent,
-    ElipseComponent
+    ElipseComponent,
+    AboutComponent,
+    BlogComponent,
+    SideDataComponent
   },data() {
     return {
 
       linkCard: "",
       linkTexto1: "",
       linkArticulo: "",
-      
+      secRender : "projects-component",      
       arrayCardData : [
         {
             "cardTitle": "Amazing Flash Gallery",
@@ -187,9 +191,9 @@ export default {
         },
           {
             "cardTitle": " E-Commerce",
-            "cardDescription": ` Una tienda virtual clásica con lista de productos provenientes de una API, carrito de compras, cálculo de monto total de la compra y formulario de contacto funcional.
-                 
-                        `,
+            "cardDescription": ` Una tienda virtual clásica con lista de productos provenientes de una API,
+             carrito de compras, cálculo de monto total de la 
+             compra y formulario de contacto funcional.`,
             "cardTools": ["HTML", "JavaScript", "FormSpree"],
             "cardImg": "",
             "cardLink": "",
@@ -198,8 +202,17 @@ export default {
     ]
     }
   
-  }
+  },
+    methods: {
+              changeSection(componentname) {
+                console.log("changeSection hit with section: " + componentname);
+                this.secRender = componentname;
  }
+},
+ computed: {
+   
+ }
+}
 </script>
 
 

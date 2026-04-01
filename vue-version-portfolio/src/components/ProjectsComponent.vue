@@ -1,4 +1,5 @@
 <template>
+   
 <div class="projects">
 <card-component :card-title="x.cardTitle" :card-description="x.cardDescription" :card-tools="x.cardTools" :card-img="x.cardImg" :card-link="x.cardLink" :back-title="x.backTitle" v-for="x in arrayCardData" :key="x.cardTitle" />
 </div>

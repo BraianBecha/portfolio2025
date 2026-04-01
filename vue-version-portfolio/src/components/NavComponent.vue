@@ -4,10 +4,10 @@
            </div>
            <div  v-if="dropDown" id="dropdown-m">
             <ol>
-                <li v-on:click = "mostrarPrincipal" @click = "dropDown =! dropDown" >Principal</li>
-                <li v-on:click = "mostrarAbout" @click = "dropDown =! dropDown" > Sobre mí </li>
-                <li v-on:click = "mostrarAbout" @click = "dropDown =! dropDown" > Otro </li>
-                <li v-on:click = "mostrarAbout" @click = "dropDown =! dropDown" > Otro 2 </li>
+                <li v-on:click = "mostrarPrincipal" @click = " changeDropd() ; emitProjectComponent() " >Principal</li>
+                <li v-on:click = "mostrarAbout" @click = " changeDropd() ; emitAboutComponent() " > Sobre mí </li>
+                <li v-on:click = "mostrarAbout" @click = " changeDropd() ; emitBlogComponent() " > Blog </li>
+              
             </ol>
            </div>
            
@@ -28,18 +28,26 @@ export default {
     
     document.addEventListener('click', this.clickGlobal);
   },
-    methods: {       
-        mostrarPrincipal() {
-             console.log("mostrarPrincipal hit");
-            this.activeLink = 'home';
-            this.$emit('navigate', 'home');
+    methods: {            
+        emitProjectComponent() {
+            console.log("emitProjectComponent hit");
+            this.$emit('navigate' , "projects-component");
         },
-        mostrarAbout() {
-            console.log("mostrarAbout hit");
-            this.activeLink = 'about';
-            this.$emit('navigate', 'about');
-        }
-    }
+        
+        emitAboutComponent() {
+            console.log("emitAboutComponent hit");
+            this.$emit('navigate' , "about-component");
+        },
+        changeDropd(){
+            console.log("changeDropd hit");
+            this.dropDown = !this.dropDown;
+        },
+        emitBlogComponent() {
+            console.log("emitBlogComponent hit");
+            this.$emit('navigate' , "blog-component");
+        },
+    },
+    emits: ['navigate']
 }
 </script>
 
