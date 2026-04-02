@@ -12,7 +12,7 @@
     --color-purpura: rgb(180, 8, 180);
 
     --padding-left: 25vw;
-    --padding-right: 2vw;
+    --padding-right: 15vw;
 
       
 
@@ -486,6 +486,7 @@ background-color: #3d3c37;
 
     .saludo {
     padding: 2rem;
+   
 }
 
 
@@ -548,8 +549,9 @@ background-color: #3d3c37;
         margin: 1rem;
     }
     #saludo1{
-        background-color: var(--color-4);
+        /* background-color: var(--color-4);  */
         border-radius: 2rem;
+         text-shadow: 2px 2px 5px var(--color-4);;
     }
     .form1
  {
@@ -630,8 +632,15 @@ header ol li {
     margin: 0.3rem;
 }
 
+.card-front > p
+   {
+        font-size: 0.6rem;
+    }
+
 }
 @media (min-width:641px) and (max-width:768px){
+
+
 
     #menu-p >i {
         font-size: 2rem;
@@ -675,7 +684,7 @@ header ol li {
         ry: 38rem;
     }
 
-    .contenedor-eliptico{
+    .contenedor-eliptico , .img-perfil-gato{
         display: none;
     }
       #section2{
@@ -689,6 +698,19 @@ header ol li {
     font-size: 0.7rem;
     margin: 0.3rem;
 }
+
+
+.card-tools > div {
+    
+    font-size: 0.8rem;
+   
+}
+.card-front > p
+   {
+        font-size: 0.6rem;
+    }
+
+
 }
 
 
@@ -697,10 +719,16 @@ header ol li {
 
 @media (min-width:769px)  and (max-width:1024px) {
 
-        .img-perfil-gato-nav {
- display:none;
+
+        .img-perfil-gato {
+    height: 14rem;
+    width: 14rem;
 }
-    #section2
+.img-perfil-gato-nav{
+    display: none;
+}
+ 
+   #section2
  {
     font-size: 1.5rem;
 }
@@ -734,8 +762,17 @@ header ol li {
     margin-left: 8rem;    
     margin-top: 15rem;
 }
+
+
+.card-tools > div {
+    
+    font-size: 0.8rem;
    
 }
+
+   
+}
+
 @media (min-width:1025px)  and (max-width:1280px){
 
         .img-perfil-gato-nav {

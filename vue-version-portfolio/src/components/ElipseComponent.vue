@@ -16,6 +16,12 @@ export default {
     name: "ElipseComponent",
     data() {
         return {}
+    },
+     methods : {
+         emitAboutComponent() {
+            console.log("emitAboutComponent hit");
+            this.$emit('navigate' , "about-component");
+        }
     }
 }
 </script>

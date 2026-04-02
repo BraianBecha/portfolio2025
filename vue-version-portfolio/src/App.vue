@@ -14,13 +14,13 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"> 
      <link rel="icon" type="image/x-icon" href="img/favicon3.png">
-    
 </head>
 
   <header>
    
 <nav-component  @navigate="changeSection"  />
-    
+     <img  @click="changeSection('projects-component')" class="img-perfil-gato-nav" src="./assets/img/devyaguarete.png" alt="imagen de yaguareté programando confundido">
+ 
   </header>
 
 
@@ -43,11 +43,12 @@
 
 <elipse-component />
 
-<side-data-component v-if="secRender !== 'blog-component'" />
+<side-data-component  @navigate="changeSection" v-if="secRender !== 'blog-component'" />
 
 </template>
 
 <script >
+
 import NavComponent from './components/NavComponent.vue'
 import SaludoComponent from './components/SaludoComponent.vue'
 import ProjectsComponent from './components/ProjectsComponent.vue'
@@ -88,7 +89,7 @@ export default {
             
          
          "cardTools": ["Vue.js", "Options API", "Imágenes con IA", "Diseño Responsive"],
-            "cardImg": "",
+            "cardImg": "././assets/img/amazing-flash-gallery.png",
             "cardLink": "",
             "backTitle": "Características"
         },
@@ -213,6 +214,8 @@ export default {
    
  }
 }
+
+
 </script>
 
 

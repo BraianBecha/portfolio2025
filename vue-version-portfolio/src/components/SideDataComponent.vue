@@ -1,7 +1,7 @@
 <template>
     
 <div class="contenedor-eliptico">
-         <img  onclick="mostrarAbout()" class="img-perfil-gato" src="/../img/devyaguarete.png" alt="imagen de yaguareté programando confundido">
+         <img  @click = " emitAboutComponent()" class="img-perfil-gato" src="/../img/devyaguarete.png" alt="imagen de yaguareté programando confundido">
        
         
             <ol class="texto-eliptico">
@@ -31,8 +31,15 @@ export default {
             
         }
     },
-    methods: {       
-    }
+    methods: {   
+        
+        emitAboutComponent() {
+            console.log("emitAboutComponent hit in sidedatacomponent");
+            this.$emit('navigate' , "about-component");
+        }
+
+    },
+     emits: ['navigate']
 }
 </script>
 

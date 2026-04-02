@@ -3,7 +3,7 @@
                 
                 <div v-on:click="flipCard" class="card-front">
                     <div class="card-img">
-                        <img src= "" alt="imagen muestra captura de un ecomerce">
+                        <img v-bind:src="cardImg" alt="imagen muestra captura de un ecomerce">
                     </div> 
 
                      <div class="card-title">

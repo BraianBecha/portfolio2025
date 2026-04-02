@@ -654,6 +654,11 @@ header ol li {
     margin: 0.3rem;
 }
 
+    .card-front > p
+   {
+        font-size: 0.6rem;
+    }
+
 }
 @media (min-width:641px) and (max-width:768px){
 
@@ -666,6 +671,11 @@ header ol li {
     padding: 2rem;
 }
 
+
+    .card-front > p
+ {
+        font-size: 0.6rem;
+    }
 
 .nombresobremi {
         font-size: 1.8rem;
@@ -713,6 +723,18 @@ header ol li {
     font-size: 0.7rem;
     margin: 0.3rem;
 }
+
+.card-tools > div {
+    
+    font-size: 0.8rem;
+   
+}
+.card-front > p
+   {
+        font-size: 0.6rem;
+    }
+
+
 }
 
 
@@ -721,9 +743,21 @@ header ol li {
 
 @media (min-width:769px)  and (max-width:1024px) {
 
+    .card-front > p
+   {
+        font-size: 0.6rem;
+    }
+
         .img-perfil-gato-nav {
  display:none;
 }
+
+    .card-front > p
+ {
+        font-size: 0.6rem;
+    }
+
+
     #section2
  {
     font-size: 1.5rem;
@@ -758,6 +792,14 @@ header ol li {
     margin-left: 8rem;    
     margin-top: 15rem;
 }
+
+.card-tools > div {
+    
+    font-size: 0.8rem;
+   
+}
+
+
    
 }
 @media (min-width:1025px)  and (max-width:1280px){
