@@ -1,5 +1,15 @@
  <template>
 
+     <div class="sobremifotoynombre">
+
+             <img  class="img-perfil" src="" alt="Imagen de perfil">
+            <ol class="nombresobremi">
+               <li  > <h3>Braian Becharouch</h3></li> 
+                <li> Coder <a href="https://es.wikipedia.org/wiki/Argentina"><img  src="" alt="Bandera argentina"></a> </li>                              
+            </ol>  
+            
+            </div>
+
   <div>   
              <div class="newspaper">
               
