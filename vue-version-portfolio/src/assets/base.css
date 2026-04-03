@@ -98,7 +98,10 @@ header{
      column-rule-width: 3px;
      color: var(--color-dark);
      column-rule-color: var(--color-dark-2);
-     background-color: var(--color-4);
+     
+      background: #d9d0d0;
+background: linear-gradient(90deg, rgb(204, 197, 197) 0%, rgba(255, 248, 248, 1) 50%, rgb(241, 223, 211) 100%);
+     
      border-radius: 1rem;
      padding: 2rem;
     
@@ -390,7 +393,7 @@ background-color: #3d3c37;
 
 
 .form1{
-    background-color:  var(--color-4);
+   background: linear-gradient(90deg, rgb(204, 197, 197) 0%, rgba(255, 248, 248, 1) 50%, rgb(241, 223, 211) 100%);
     display: grid;
     margin: 2rem;
     padding: 2rem;
@@ -398,7 +401,7 @@ background-color: #3d3c37;
     border-radius: 1rem;
     min-width: 30rem;
     max-width: 50rem;
-    font-size: 1.5rem;    
+    font-size: 1rem;    
 }
 
 .form1 .button{
@@ -407,7 +410,7 @@ background-color: #3d3c37;
     background-color: var(--color-2);
     border-radius: 0.5rem;
     color: white;
-    padding: 0.9rem;
+    padding: 0.3rem;
     margin: 0.3rem;
 }
 
@@ -425,8 +428,8 @@ background-color: #3d3c37;
     margin: 1rem;
     grid-column: 2 / 3; 
     grid-row: 2 / 3;    
-    height: 1.3rem ;
-    margin: 1.5rem ;
+    height: 1rem ;
+    margin: 1rem ;
     padding: 1rem;
     border-radius: 1rem;
     font-size: 2rem;
@@ -437,8 +440,8 @@ background-color: #3d3c37;
     margin: 1rem;
     grid-column: 2 / 3;
     grid-row: 4 / 5;    
-    height: 1.3rem ;
-    margin: 1.5rem ;
+    height: 1rem ;
+    margin: 1rem ;
     padding: 1rem;
     border-radius: 1rem;
      font-size: 2rem;
@@ -451,7 +454,7 @@ background-color: #3d3c37;
     grid-row: 6 / 7;    
     padding: 3rem ;
     border-radius: 1rem;
-     font-size: 1.5rem;
+     font-size: 1rem;
      width: 100%;
 
 }

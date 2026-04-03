@@ -24,7 +24,7 @@
   <div class="calltoaction">
   <br>
 <h3>si crees que puedo ayudarte...</h3>
-  <h1>hablemos: </h1>
+  <h2>hablemos: </h2>
   <br> 
   </div>
   
@@ -54,7 +54,10 @@
  </template>
 
 
- <style scoped></style>
+ <style scoped>
+
+
+</style>
 
 
  <script >
