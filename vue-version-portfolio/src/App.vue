@@ -88,7 +88,7 @@ export default {
          El código es mantenible y escalable, con componentes reutilizables y una organización clara.`,
             
          
-         "cardTools": ["Vue.js", "Options API", "Imágenes con IA", "Diseño Responsive"],
+         "cardTools": ["Vue.js", "Options API", "Diseño Responsivo"],
             "cardImg": "././assets/img/amazing-flash-gallery.png",
             "cardLink": "",
             "backTitle": "Características"

@@ -229,7 +229,7 @@ header{
 .card-tools > div{
 background-color: #3d3c37;
     color: beige;
-    font-size: 1rem ;
+    font-size: 0.8rem ;
     margin: 0.2rem;
     padding: 0.5rem;
     border-radius: 0.5rem;
@@ -554,7 +554,7 @@ background-color: #3d3c37;
     }
     .card-tools > div{
         
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     padding: 0.2rem;
     }
     .card-back{
@@ -900,7 +900,7 @@ header ol li {
     }
     
     .card-tools > div{
-         font-size: 1rem;
+         font-size: 0.8rem;
 
     }
      .card-back > p{
@@ -947,7 +947,7 @@ header ol li {
     }
     
     .card-tools > div{
-         font-size: 1.6rem;
+         font-size: 1rem;
 
     }
 
