@@ -43,7 +43,7 @@
 
 <elipse-component />
 
-<side-data-component  @navigate="changeSection" v-if="secRender !== 'blog-component'" />
+<side-data-component  @navigate="changeSection" v-if="secRender !== 'blog-component' && secRender !== 'about-component'" />
 
 </template>
 
