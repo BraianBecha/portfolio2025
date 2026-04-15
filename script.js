@@ -17,6 +17,10 @@ card.forEach(element => {
     });
 });
 
+function lanzarAlerta(mensaje) {
+    alert(mensaje);
+  }
+  
 function dropDown(){
 flag=false;
     if(menu.style.display == "none" && flag==false){
