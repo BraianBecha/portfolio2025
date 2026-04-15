@@ -33,6 +33,9 @@ background: linear-gradient(90deg, rgb(204, 197, 197) 0%, rgba(255, 248, 248, 1)
     height: 100%;
     min-height: 100%;
     background-color: var(--color-4);
+     display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 a{
   text-decoration: none;
@@ -500,6 +503,16 @@ background-color: #3d3c37;
 }
 
 
+.footer {
+    width: 100%;
+    height: 15rem;
+
+    bottom: 0;
+    position: relative;
+    margin-top: 30rem;    
+     background: linear-gradient(to bottom, var(--color-2), var(--color-1-1 ));
+   
+  }
 
 @media (max-width: 640px) {
 
@@ -1054,5 +1067,7 @@ header ol li {
     font-size: 2.1rem;
     margin: 0.5rem;
 }
+
+
    
 }
