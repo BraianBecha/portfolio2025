@@ -477,7 +477,24 @@ background-color: #3d3c37;
     border-radius: 1rem;
     font-size: 1.5rem;
     
-} 
+}
+
+
+.form1 .inp-organizacion{
+    display: grid;    
+    margin: 1rem;
+    grid-column: 2 / 3; 
+    grid-row: 8 / 9;    
+    height: 1rem ;
+    margin: 1rem ;
+    padding: 1rem;
+    border-radius: 1rem;
+     font-size: 1rem;
+}
+
+
+
+
 .form1 .inp-email{
     display: grid;    
     margin: 1rem;
@@ -506,6 +523,11 @@ background-color: #3d3c37;
     grid-column: 1 / 2; 
     grid-row: 1 / 2;    
 }
+.lab-organizacion{
+    grid-column: 1 / 2; 
+    grid-row: 5 / 6;
+}
+
 .lab-email{
     grid-column: 1 / 2; 
     grid-row: 3 / 4;
@@ -645,6 +667,10 @@ background-color: #3d3c37;
 }
 
 .form1 > form > div > .lab-nombre{
+    margin: 1rem;
+    font-size: 1rem;
+}
+.form1 > form > div > .lab-organizacion{
     margin: 1rem;
     font-size: 1rem;
 }
