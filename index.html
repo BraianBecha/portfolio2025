@@ -13,18 +13,23 @@
     
 </head>
 <body> 
-    <header>
+  
+    <header style="z-index: 3;">
      
 
         <nav>           
             <div id="menu-p">
-           <i class="fa-solid fa-ellipsis-vertical" onclick="dropDown()"></i>
-           </div>
+           <i class="fa-solid fa-ellipsis-vertical" onclick="dropDown()" > </i>
+           
+
+           
            <div id="dropdown-m">
             <ol>
-                <li onclick="mostrarPrincipal(), dropDown()">Principal</li>
-                <li onclick="mostrarAbout(),dropDown()">Sobre mí </li>
+                <li onclick="mostrarPrincipal() , dropDown()">Principal</li>
+                <li onclick="mostrarAbout() , dropDown()">Sobre mí </li>
             </ol>
+           </div>
+
            </div>
         </nav>
 
@@ -34,9 +39,9 @@
 
 
 
-    <div id="content">
+    <div id="content" >
 
-        <div >
+       
         <div class="saludo" id="saludo1">
         <h1> Hola!
         </h1>
@@ -46,9 +51,11 @@
         
      
         </div>
-        </div>
+       
+                                     <section id="section1">
+                                        
+      
 
-      <section id="section1">
         <div class="projects">
 
 
@@ -152,13 +159,13 @@
                  <div class="card-back">
                     <h4>Características</h4><br>
                     <p> 
-         Aplicación de escritorio para crear códigos QR. Una ventana principal contiene el ingreso de datos
-         y una segunda muestra una lista de acciones que se ejecutarán todas al tocar un botón. Cada acción resulta en
-        uno o más QRs y uno o más archivos. <br>  
-        <br>
-        Código mantenible y escalable en un <b> MVC + Builder </b>que construye un código QR y lo imprime en PDF digital. 
-        La organización de paquetes y clases siguen la convención <b>Maven</b>.<br>
-        </p>
+                         Aplicación de escritorio para crear códigos QR. Una ventana principal contiene el ingreso de datos
+                          y una segunda muestra una lista de acciones que se ejecutarán todas al tocar un botón. Cada acción resulta en
+                          uno o más QRs y uno o más archivos. <br>  
+                             <br>
+                                Código mantenible y escalable en un <b> MVC + Builder </b>que construye un código QR y lo imprime en PDF digital. 
+                               La organización de paquetes y clases siguen la convención <b>Maven</b>.<br>
+                              </p>
                 
                     <a href="https://braianbecha.github.io/landing-qr-generator/index.html">Más info</a>
                      <a href="https://github.com/BraianBecha/generador-codigos.git">Repo</a>
@@ -168,7 +175,7 @@
 
 
 
-            </div> 
+                     </div> 
 
 
 
@@ -198,8 +205,8 @@
                  <div class="card-back">
                     <h4>Características</h4><br>
                     <p> 
-         El <b> CRUD </b> típico de un curso de <b>BackEnd</b>. Lo hice en el curso <i>Back-End/Java</i> en <b>Talento Tech</b>. </p>
-        <br>
+                            El <b> CRUD </b> típico de un curso de <b>BackEnd</b>. Lo hice en el curso <i>Back-End/Java</i> en <b>Talento Tech</b>. </p>
+                         <br>
         
                 
                     <a href="https://github.com/BraianBecha/Backend-TalentoTech-Final">Más info</a>
@@ -210,6 +217,8 @@
 
 
             </div> 
+
+
             <div class="card" >
                 
                 <div class="card-front">
@@ -379,7 +388,7 @@
 
             </div> 
         </div>
-
+ 
         </section>
 
         <section id="section2">
@@ -407,7 +416,7 @@
      
         <h3>Inglés: </h3>
 <p> Soy capaz de mantener conversaciones básicas y leer sin problemas gran variedad de textos, en especial textos técnicos.</p>
-  </p>
+  
 <br>
 <br>
 
@@ -423,20 +432,27 @@
   </div>
   
   <form  action="https://formspree.io/f/mjkvvkaj" method="POST" >
-    <div>
+       <div>
         <label class="lab-nombre" for="nombre">Nombre</label>
         <input class="inp-nombre" type="text" id="nombre" name="nombre" required>
+      </div>
+      <div>
+        <label class="lab-email" for="organizacion" > Organización/empresa    </label>
+        <input class="inp-email"  type="text" id="organizacion" name="organizacion" required>
       </div>
       <div>
         <label class="lab-email" for="email" >Email    </label>
         <input class="inp-email"  type="text" id="email" name="email" required>
       </div>
       <div>
-        <labe class="lab-mensaje" for="mensaje">Mensaje</label>
-        <textarea class="inp-mensaje" id="mensaje" name="mensaje" required  rows="8" cols="35"></textarea>
-      </div>
+        <label class="lab-mensaje" for="mensaje">Mensaje</label>
+        <textarea class="inp-mensaje" id="mensaje" name="mensaje" required  rows="8" cols="35" required> </textarea>
+     </div>
       <button  type="submit" class="button"> <i class="fa fa-paper-plane"></i> Enviar </button>
+      
     </form>
+
+
 </div>
 
     
@@ -445,20 +461,14 @@
 <ol style="list-style: none;">
 
      <li>  <a href="https://github.com/BraianBecha"> <i  class="fa-brands fa-github icon"></i> </a>  <a  href="#">  <i  class="fa-brands fa-linkedin icon" onclick="lanzarAlerta('Hola. Si usted es reclutador/a, por favor contactarse a través de la sección -Contacto-. Saludos, Braian B.')"></i> </a> </li>
-                
-             
+           
 </ol>
 </div>
 
 
         </section>
 
-        
-<div class="footer">
-    
-    <p style="text-align: center; padding-top: 2rem; color: white;">&#169; 2025 Amazing Flash Gallery </p>
-    
-</div>
+  
         
     </div> 
 
@@ -489,8 +499,13 @@
             </ol>
 
     </div>
-
+    </div>
+          
+<div class="footer">
     
+    <p style="text-align: center; padding-top: 2rem; color: white;"> 2025 Braian B.</p>
+    
+</div>
      
 
 

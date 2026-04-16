@@ -1,6 +1,6 @@
 var menu = document.getElementById("dropdown-m")
-console.log(menu)
-console.log(menu.style.display)
+console.log("menu")
+
 menu.style.display="none";
 
 var section1 = document.getElementById("section1");
@@ -17,11 +17,10 @@ card.forEach(element => {
     });
 });
 
-function lanzarAlerta(mensaje) {
-    alert(mensaje);
-  }
+
   
 function dropDown(){
+    console.log(" menu.style.display = ");
 flag=false;
     if(menu.style.display == "none" && flag==false){
         menu.style.display = "block";
@@ -53,3 +52,7 @@ function mostrarAbout(){
     saludo1.style.display="none";
     sideCard.style.display="none";
 };
+
+function lanzarAlerta(mensaje) {
+    alert(mensaje);
+  };

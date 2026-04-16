@@ -22,7 +22,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+
 }
+
+
 html{
     height: 100%;
 }
@@ -30,10 +34,10 @@ body{
 background: #d9d0d0;
 background: linear-gradient(90deg, rgb(204, 197, 197) 0%, rgba(255, 248, 248, 1) 50%, rgb(241, 223, 211) 100%);
     font-family: Raleway;
-    height: 100%;
-    min-height: 100%;
-    background-color: var(--color-4);
      display: flex;
+    min-height: 100%;
+    background-color: var(--color-4);    
+     justify-content: space-between;
   flex-direction: column;
   margin: 0;
 }
@@ -43,6 +47,21 @@ a{
 }
 
 
+nav{
+    display: block;
+}
+ 
+#menu-p{
+ position: relative;
+  display: inline-block;
+  z-index: 4;
+}
+#menu-p>i:hover{
+background-color: var(--color-purpura);
+}
+ 
+
+
 #menu-p >i{
    
     font-size: 3rem;
@@ -50,17 +69,17 @@ a{
     margin: 0.5rem;
     padding: 1rem;
 }
-#menu-p :hover{
-background-color: var(--color-purpura);
-}
-#dropdown-m{
-    
-    z-index: 2;
-    position: relative;
+
+
+#dropdown-m{    
+    z-index: 1;
+    position: absolute;
     background-color: var(--color-2);
     border: solid 2px var(--color-dark);
     border-radius: 0.8rem;
     padding: 1rem;
+    right: 0;
+    
 }
 header ol li{
    list-style: none;
@@ -72,11 +91,9 @@ header ol li:hover{
     background-color: var(--color-purpura);
 }
 
-#content{
-    
-    z-index: 1;
+#content{   
     align-items: center;
-position: absolute;
+    
 color: var(--color-dark);
 width: 100%;
 height: 100%;
@@ -154,7 +171,7 @@ header{
     grid-template-rows: repeat(12, 1fr);
 }
 .card-front .card-img{
-    overflow: hidden;
+   /* overflow: hidden;*/
     display: grid;
     grid-row-start: 1;
     grid-row-end: 9;
@@ -314,7 +331,7 @@ background-color: #3d3c37;
     position: absolute;
     z-index: -1;
     fill: var(--color-2);
-    /*  background-image: radial-gradient(circle at center, var(--color-2), var(--color-1-1 ));    */
+    
     rx: 20vw;
     ry: 70vh;
     cx: 0;
@@ -324,10 +341,11 @@ background-color: #3d3c37;
     height: 150%;
     width: 40vw;
     position: absolute;
+    z-index: -1;
     
 }
 .contenedor-eliptico {
-    position: relative;    
+    position: absolute;    
     max-width: 53rem;
     width: 50vw;
     height: 100vh;
@@ -673,6 +691,8 @@ header ol li {
     }
 
 }
+
+
 @media (min-width:641px) and (max-width:768px){
 
     #menu-p >i {
@@ -832,8 +852,8 @@ header ol li {
     
     .contenedor-eliptico{ 
         width: 31rem;
-        left: -6rem;
-        top: -7rem;       
+        left: -3rem;
+        top: 0rem;       
     }
 
     .texto-eliptico {
@@ -886,8 +906,8 @@ header ol li {
     }
     
     .contenedor-eliptico{ 
-        left: -10rem;
-        top: -7rem;
+        left: -11rem;
+        top: 0rem;
     }
 
     .texto-eliptico {
@@ -941,7 +961,7 @@ header ol li {
    
     .contenedor-eliptico{        
     left: -16rem;
-    top: -7rem;
+    top: 0rem;
     }
     .texto-eliptico{
         font-size: 2.3rem;
@@ -976,7 +996,7 @@ header ol li {
     margin: 1rem;
     font-size: 0.9rem;
 }
-.form1 > form > div > .lab-email{
+.form1 > form > div > .lab-email , .lab-organizacion{
      margin: 1rem;
     font-size: 0.9rem;
 }
@@ -1052,7 +1072,7 @@ header ol li {
     margin: 1rem;
     font-size: 1rem;
 }
-.form1 > form > div > .lab-email{
+.form1 > form > div > .lab-email , .inp-organizacion{
      margin: 1rem;
     font-size: 1rem;
 }
